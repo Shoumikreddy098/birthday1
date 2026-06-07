@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Rishitha! 🎂</title>
+  <meta name="description" content="A secret birthday surprise made with love for Rishitha!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <canvas id="fx"></canvas>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ═══════════ INTRO: DISCOVERY ═══════════ -->
+  <section id="discovery" class="screen active">
+    <div class="disc-ring r1"></div>
+    <div class="disc-ring r2"></div>
+    <div class="disc-cat">🐱</div>
+    <p class="disc-label" id="discoveryText">Searching...</p>
+    <h1 class="disc-headline" id="discoveryHeadline">Among billions...</h1>
+    <p class="disc-sub" id="discoverySubtext">today belongs to one.</p>
+    <div class="disc-ticker" aria-hidden="true">🎉 🎊 🎈 🎁 🎀 🍰 🎂 ✨ 🎉 🎊 🎈 🎁 🎀 🍰 🎂 ✨</div>
+  </section>
+
+  <!-- ═══════════ INTRO: LOADER ═══════════ -->
+  <section id="loader" class="screen">
+    <div class="ld-spinner">🎂</div>
+    <div class="ld-card">
+      <p class="chip">Loading Birthday Magic...</p>
+      <h2 id="loaderText">Initializing...</h2>
+      <div class="prog-track"><span id="progressBar"></span></div>
+      <p id="accessText" class="ld-status">BAKING CAKE...</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ INTRO: GATE ═══════════ -->
+  <section id="gate" class="screen">
+    <div class="gate-blob" aria-hidden="true"></div>
+    <div class="gate-card">
+      <div class="gate-lock">🔐</div>
+      <p class="chip chip-orange">SECRET BIRTHDAY VAULT</p>
+      <h2>Who's there? 👀</h2>
+      <p class="gate-hint-text">This surprise belongs to someone very special.</p>
+      <label for="password">Enter your name to unlock 🗝️</label>
+      <div class="pw-row">
+        <input id="password" type="password" autocomplete="off" placeholder="type your name..." />
+        <button id="unlockBtn">Unlock 🚀</button>
+      </div>
+      <p id="gateMessage" class="gate-msg">hint: it's her name ✨</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MAIN EXPERIENCE — SINGLE SCROLL
+  ════════════════════════════════════════ -->
+  <main id="experience" class="hidden">
+
+    <!-- ── Pill Nav ── -->
+    <nav class="pill-nav" id="pillNav">
+      <span class="pn-brand">🎂 Rishitha!</span>
+      <div class="pn-actions">
+        <button id="musicBtn" title="Toggle music" class="pn-btn">🎵</button>
+        <button id="heartBtn" title="Heart rain" class="pn-btn">💖</button>
+        <button id="themeBtn" title="Toggle theme" class="pn-btn">🌙</button>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════
+         SECTION 1 — HERO (cream)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-hero" id="hero">
+      <!-- floating balloons -->
+      <span class="bal b1">🎈</span>
+      <span class="bal b2">🎈</span>
+      <span class="bal b3">🎀</span>
+      <span class="bal b4">⭐</span>
+      <span class="bal b5">✨</span>
+      <span class="bal b6">🌸</span>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <span class="tag-pill yellow-pill">🎉 Today is THE day!</span>
+          <h1 class="hero-h1">Happy<br>Birthday<br><em class="hero-name">Rishitha!</em></h1>
+          <p class="hero-p">A whole secret world built just for you.<br>Scroll down to explore ↓</p>
+          <button id="blastBtn" class="cta-btn">🚀 Launch Birthday Blast!</button>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <!-- CSS 3-layer cake -->
+          <div class="hero-cake">
+            <div class="hc-candle">
+              <div class="hc-flame"></div>
+            </div>
+            <div class="hc-top">
+              <span class="hc-drip dr1"></span>
+              <span class="hc-drip dr2"></span>
+              <span class="hc-drip dr3"></span>
+              <span class="hc-drip dr4"></span>
+            </div>
+            <div class="hc-mid"><span class="hc-deco">🌸 Happy Birthday 🌸</span></div>
+            <div class="hc-base"></div>
+            <div class="hc-plate"></div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FFE8D6" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         MARQUEE BANNER
+    ═══════════════════════════════════ -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>🎂 HAPPY BIRTHDAY RISHITHA</span>
+        <span>✨ YOU ARE AMAZING</span>
+        <span>🌸 TODAY IS YOUR DAY</span>
+        <span>🎊 CELEBRATE BIG</span>
+        <span>💖 BORN TO SHINE</span>
+        <span>🎂 HAPPY BIRTHDAY RISHITHA</span>
+        <span>✨ YOU ARE AMAZING</span>
+        <span>🌸 TODAY IS YOUR DAY</span>
+        <span>🎊 CELEBRATE BIG</span>
+        <span>💖 BORN TO SHINE</span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         SECTION 2 — STATS (peach)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-stats" id="stats">
+      <div class="sec-inner">
+        <span class="tag-pill pink-pill">📊 Official Data</span>
+        <h2 class="sec-h2">Rishitha: By The Numbers</h2>
+        <p class="sec-p">Scientifically measured. 100% accurate. Probably.</p>
+        <div class="stats-grid">
+          <div class="sc" style="--c:#FF4ECD;--bg:#fff0fa">
+            <div class="sc-icon">🎂</div><b class="sc-n" data-count="20">0</b>
+            <p>Years of pure awesomeness</p>
+          </div>
+          <div class="sc" style="--c:#FF6B35;--bg:#fff5f0">
+            <div class="sc-icon">😁</div><b class="sc-n" data-count="0">0</b>
+            <p>People made happy</p>
+          </div>
+          <div class="sc" style="--c:#A855F7;--bg:#f9f0ff">
+            <div class="sc-icon">😌</div><b class="sc-n" data-count="100">100+</b>
+            <p>Person annoyed daily (me)</p>
+          </div>
+          <div class="sc" style="--c:#38BDF8;--bg:#f0faff">
+            <div class="sc-icon">😴</div><b class="sc-n" data-count="97">0</b>
+            <p>Pro sleeper level</p>
+          </div>
+          <div class="sc" style="--c:#FFD93D;--bg:#fffdf0">
+            <div class="sc-icon">🍕</div><b class="sc-n" data-count="100">0</b>
+            <p>Foodie score (chef mode)</p>
+          </div>
+          <div class="sc" style="--c:#8FDD3A;--bg:#f6fff0">
+            <div class="sc-icon">🙂</div><b class="sc-n" data-count="100">0</b>
+            <p>Messing up things</p>
+          </div>
+          <div class="sc" style="--c:#FF4ECD;--bg:#fff0fa">
+            <div class="sc-icon">🌀</div><b class="sc-n" data-count="88">0</b>
+            <p>Chaos energy level</p>
+          </div>
+          <div class="sc" style="--c:#FF6B35;--bg:#fff5f0">
+            <div class="sc-icon">⭐</div><b class="sc-n" data-count="-100">0</b>
+            <p>Friendship level (max)</p>
+          </div>
+        </div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C480,0 960,80 1440,40 L1440,80 L0,80 Z" fill="#F0E6FF" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 3 — GIFT BOXES (lavender)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-gifts" id="gifts">
+      <div class="sec-inner">
+        <span class="tag-pill purple-pill">🎁 Tap to reveal</span>
+        <h2 class="sec-h2">Digital Gift Boxes</h2>
+        <p class="sec-p">Each box holds a secret. Can you open them all?</p>
+        <div id="giftGrid" class="gift-grid"></div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#E6FFF0" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 4 — QUIZ (mint)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-quiz" id="quiz">
+      <div class="sec-inner">
+        <span class="tag-pill green-pill">🤔 Absolutely no wrong answers</span>
+        <h2 class="sec-h2">The Rishitha Quiz</h2>
+        <p class="sec-p">This test is 100% scientific. Results cannot be disputed.</p>
+        <div id="quizCard" class="quiz-card"></div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,20 C480,80 960,0 1440,60 L1440,80 L0,80 Z" fill="#FFF5E6" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 5 — VIRTUAL CAKE (warm)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-cake" id="cake-interact">
+      <div class="sec-inner">
+        <span class="tag-pill orange-pill">🕯️ Make a wish</span>
+        <h2 class="sec-h2">Virtual Birthday Cake</h2>
+        <p class="sec-p">Blow the candles. Cut the cake. Make it count!</p>
+        <div class="cake-stage">
+          <div id="mainCake" class="int-cake" tabindex="0" role="button" aria-label="Birthday cake">
+            <div class="ic-candles">
+              <div class="ic-candle">
+                <div class="ic-flame"></div>
+              </div>
+              <div class="ic-candle">
+                <div class="ic-flame"></div>
+              </div>
+              <div class="ic-candle">
+                <div class="ic-flame"></div>
+              </div>
+            </div>
+            <div class="ic-top">
+              <span>🌸 Happy Birthday Rishitha 🌸</span>
+              <div class="ic-drip-row"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="ic-mid"></div>
+            <div class="ic-base"></div>
+            <div class="ic-shadow"></div>
+          </div>
+          <div class="cake-controls">
+            <button id="blowBtn" class="ctrl-btn ctrl-blue">💨 Blow Candles</button>
+            <button id="cutBtn" class="ctrl-btn ctrl-pink">🎂 Cut Cake</button>
+          </div>
+          <p id="cakeMsg" class="cake-msg"></p>
+        </div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,0 1080,80 1440,20 L1440,80 L0,80 Z" fill="#FFF0FA" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 6 — COMPLIMENTS (pink)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-compliments" id="compliments">
+      <div class="sec-inner">
+        <span class="tag-pill light-pill">💌 Powered by love</span>
+        <h2 class="sec-h2 white-h2">The Compliment Machine</h2>
+        <p class="sec-p white-p">Press the button. Receive facts.</p>
+        <div class="comp-card">
+          <div class="comp-quotes">"</div>
+          <h3 id="complimentText">You light up every room you walk into.</h3>
+          <div class="comp-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <button id="complimentBtn" class="white-btn">✨ Generate Another!</button>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,60 C480,0 960,80 1440,20 L1440,80 L0,80 Z" fill="#EEF6FF" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 7 — LETTERS (sky)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-letters" id="letters">
+      <div class="sec-inner">
+        <span class="tag-pill sky-pill">✉️ Open each one!</span>
+        <h2 class="sec-h2">Letters From the Universe</h2>
+        <p class="sec-p">Six letters, just for you. Tap each one to open.</p>
+        <div id="letterSky" class="letter-sky"></div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,30 C360,80 1080,0 1440,50 L1440,80 L0,80 Z" fill="#1a1a3e" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 8 — RADAR (dark)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-radar" id="radar">
+      <div class="sec-inner">
+        <span class="tag-pill lime-pill">📡 Live Satellite Feed</span>
+        <h2 class="sec-h2 white-h2">World's Best Birthday Girl Locator</h2>
+        <div class="radar-layout">
+          <div class="radar-circle">
+            <div class="radar-ring ring1"></div>
+            <div class="radar-ring ring2"></div>
+            <div class="radar-ring ring3"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-blip bp1"></div>
+            <div class="radar-blip bp2"></div>
+            <div class="radar-dot"></div>
+          </div>
+          <div class="radar-panel">
+            <div class="rp-header">📡 SCAN RESULTS</div>
+            <div class="rp-row"><span class="rp-lbl">NAME</span><span class="rp-val">Rishitha</span></div>
+            <div class="rp-row"><span class="rp-lbl">STATUS</span><span class="rp-val rp-green">PRECIOUS ✓</span></div>
+            <div class="rp-row"><span class="rp-lbl">VIBES</span><span class="rp-val">Immaculate</span></div>
+            <div class="rp-row"><span class="rp-lbl">THREAT</span><span class="rp-val rp-pink">Too Cute ⚠️</span></div>
+            <div class="rp-row"><span class="rp-lbl">VERDICT</span><span class="rp-val rp-yellow">FOUND! ⭐</span></div>
+            <p id="scannerText" class="rp-scan">Scanning Earth...</p>
+          </div>
+        </div>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C480,80 960,0 1440,40 L1440,80 L0,80 Z" fill="#fff8f0" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 9 — SECRET LETTER (cream)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-vault" id="vault">
+      <div class="sec-inner">
+        <span class="tag-pill pink-pill">💌 For your eyes only</span>
+        <h2 class="sec-h2">A Personal Letter</h2>
+        <p class="sec-p">Click the envelope to read your letter.</p>
+        <div class="env-wrap" id="vaultEnvelope">
+          <div class="env-flap">
+            <div class="env-emoji">💌</div>
+          </div>
+          <div class="env-body">
+            <p class="env-cta">Click to open ↓</p>
+          </div>
+        </div>
+        <article id="secretLetter" class="letter-card hidden">
+          <div class="letter-header">
+            <div class="letter-wax">💖</div>
+            <p>To Rishitha, with love</p>
+          </div>
+          <p>Some people arrive like a small celebration and somehow make life feel brighter without even trying. You
+            are one of those rare, wonderful people.</p>
+          <p>I hope this birthday reminds you how loved, valued, and truly unforgettable you are. May this year be
+            gentle with your heart, bold with your dreams, and full of moments that make you smile for absolutely no
+            reason.</p>
+          <p>Anthe inka em ledhu poo</p>
+          <p class="letter-ps">P.S. You're also still a certified Idiot. But we love you for it. 😌</p>
+          <p class="letter-sign">— Made just for you 🌸</p>
+        </article>
+      </div>
+      <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,20 C360,80 1080,10 1440,60 L1440,80 L0,80 Z" fill="#FF4ECD" />
+      </svg>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECTION 10 — FINALE (pink gradient)
+    ═══════════════════════════════════ -->
+    <section class="sec sec-finale" id="finale">
+      <div class="finale-bg-circles" aria-hidden="true">
+        <div class="fbc c1"></div>
+        <div class="fbc c2"></div>
+        <div class="fbc c3"></div>
+      </div>
+      <div class="sec-inner finale-inner">
+        <div class="finale-icon">🎂</div>
+        <h2 class="finale-h2">You're one in 8 billion.</h2>
+        <p class="finale-p">And today, the whole universe made time just for you.</p>
+        <button id="finalBtn" class="white-btn big-white-btn">🎉 One Last Thing...</button>
+        <div id="finaleText" class="finale-msg"></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Made for Rishitha &nbsp;·&nbsp; <kbd>M</kbd> music &nbsp; <kbd>H</kbd> hearts &nbsp; <kbd>B</kbd> blast
+      </p>
+    </footer>
+  </main>
+
+  <!-- Local audio: Karma Theme (music.m4a) -->
+  <audio id="bgMusic" src="music.m4a" loop preload="auto"></audio>
+
+  <!-- Now-Playing bar -->
+  <div id="nowPlaying" class="now-playing" aria-live="polite">
+    <span class="np-icon">🎵</span>
+    <div class="np-info">
+      <span class="np-title">The Karma Theme</span>
+      <span class="np-artist">Anirudh Ravichander · U Turn</span>
+    </div>
+    <div class="np-bars" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <button id="secretPig" class="secret-cat" aria-label="Secret cat" title="Secret!">🐱</button>
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
