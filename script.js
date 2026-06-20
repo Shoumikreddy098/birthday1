@@ -1,5 +1,5 @@
 // ============================================================
-//  RISHITHA BIRTHDAY — PREMIUM SINGLE-SCROLL EXPERIENCE
+//  hansika BIRTHDAY — PREMIUM SINGLE-SCROLL EXPERIENCE
 // ============================================================
 
 const $ = (s) => document.querySelector(s);
@@ -73,7 +73,7 @@ const finalLines = [
   "I hope life gives you beautiful, unexpected surprises.",
   "And whenever things feel difficult...",
   "remember that you are so much stronger than you think.",
-  "Happy Birthday, Rishitha ❤️",
+  "Happy Birthday, hansika ❤️",
   "Out of all the gifts I could have given...",
   "I decided to build a whole universe.",
   "Just for you.",
@@ -277,7 +277,7 @@ async function runLoader() {
 // ── Gate ───────────────────────────────────────────────────
 function unlock() {
   const val = ($("#password")?.value || "").trim().toLowerCase();
-  const ok = ["rishitha", "birthday"].includes(val);
+  const ok = ["hansika", "birthday"].includes(val);
 
   if (!ok) {
     const msg = $("#gateMessage");
@@ -287,7 +287,7 @@ function unlock() {
   }
 
   const msg = $("#gateMessage");
-  if (msg) msg.innerHTML = "✅ Welcome, Rishitha! 💖";
+  if (msg) msg.innerHTML = "✅ Welcome, hansika! 💖";
   ping(740, .16);
   $("#gate")?.classList.add("exit");
 
@@ -670,7 +670,7 @@ function initEvents() {
 
   // Double-click easter egg
   document.addEventListener("dblclick", () => {
-    toast("🥚 Easter egg: Rishitha gets infinite birthday points!");
+    toast("🥚 Easter egg: hansika gets infinite birthday points!");
     confetti(100);
   });
 }
